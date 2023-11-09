@@ -9,14 +9,14 @@ const cookieParser = require('cookie-parser');
 
 
 //router
-const fishRoute = require('./routes/Fish');
-const aquaticPlantRoute = require('./routes/AquaticPlant');
-const fishPedestalRoute = require('./routes/FishPedestal');
-const productRoute = require('./routes/Product');
-const authRoute = require('./routes/Auth');
-const userRoute = require('./routes/User');
-const newsRoute = require('./routes/News');
-const cartsRoute = require('./routes/Carts');
+const fishRoute = require('../routes/Fish');
+const aquaticPlantRoute = require('../routes/AquaticPlant');
+const fishPedestalRoute = require('../routes/FishPedestal');
+const productRoute = require('../routes/Product');
+const authRoute = require('../routes/Auth');
+const userRoute = require('../routes/User');
+const newsRoute = require('../routes/News');
+const cartsRoute = require('../routes/Carts');
 //------------------------------------------
 
 dotenv.config();
@@ -33,13 +33,13 @@ const createMongoose = require('./data/dataFish');
 // createMongoose.createDataNews(); 
 //-------------------------------------------
 app.use(bodyParser.json());
-app.use(cors(
-    {
-        origin: ["https://deploy-mevn-1whq.vercel.app"],
-        methods: ["POST", "GET", "PUT", "DELETE"],
-        credentials: true 
-    }
-));
+// app.use(cors(
+//     {
+//         origin: ["https://deploy-mevn-1whq.vercel.app"],
+//         methods: ["POST", "GET", "PUT", "DELETE"],
+//         credentials: true 
+//     }
+// ));
 app.use(morgan('common'));
 app.use(cookieParser());
 //Routes
