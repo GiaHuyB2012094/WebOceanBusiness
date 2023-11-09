@@ -154,7 +154,7 @@
         methods: {
             async getListProduct(){
                 try {
-                    const productPage = await axios.get('http://localhost:4000/api/fish/product/page');
+                    const productPage = await axios.get('https://web-ocean-business-mevn.vercel.app/api/fish/product/page');
                     this.listProduct = productPage.data;
                     // {
                     //     params: {
