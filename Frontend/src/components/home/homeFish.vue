@@ -44,7 +44,7 @@ import axios from 'axios';
     methods: {
         async getListFish(){
             try {
-                const result = await axios.get('web-ocean-business-api.vercel.app/api/fish/home/list',
+                const result = await axios.get('https://web-ocean-business-mevn.vercel.app/api/fish/home/list',
                 // {
                 //     params: {
                 //        id:this.$route.params.id},
