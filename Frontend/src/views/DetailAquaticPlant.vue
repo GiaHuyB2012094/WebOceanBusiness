@@ -125,7 +125,7 @@
         },
         methods: {
             async getAquaticPlantDetail() {
-                const result = await axios.get('http://localhost:4000/api/aquaticPlant/detailAquaticPlant/detail',
+                const result = await axios.get('https://web-ocean-business-mevn.vercel.app/api/aquaticPlant/detailAquaticPlant/detail',
                     {
                         params: {
                             id: this.$route.params.id,
@@ -149,7 +149,7 @@
                 } 
                 else {
                     try {
-                        const result = await axios.post('http://localhost:4000/api/cart/add/product',{
+                        const result = await axios.post('https://web-ocean-business-mevn.vercel.app/api/cart/add/product',{
                         idProduct: this.aquaticPlant._id,
                         quantity:  this.count,
                         idCart:    this.$store.state.idCart,
