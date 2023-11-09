@@ -35,7 +35,7 @@ const createMongoose = require('../data/dataFish');
 app.use(bodyParser.json());
 app.use(cors(
     {
-        origin: ["web-ocean-business-mevn.vercel.app"],
+        origin: ["https://web-ocean-business-mevn.vercel.app"],
         methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true 
     }
