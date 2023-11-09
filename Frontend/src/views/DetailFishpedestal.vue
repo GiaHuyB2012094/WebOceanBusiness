@@ -128,7 +128,7 @@
         methods: {
             async getFishPedestalDetail() {
                 // console.log(this.$route.params.id);
-                const result = await axios.get('http://localhost:4000/api/fishPedestal/detailFishpedestal/detail',
+                const result = await axios.get('https://web-ocean-business-mevn.vercel.app/api/fishPedestal/detailFishpedestal/detail',
                     {
                         params: {
                             id: this.$route.params.id,
@@ -151,7 +151,7 @@
                 } 
                 else {
                     try {   
-                        const result = await axios.post('http://localhost:4000/api/cart/add/product',{
+                        const result = await axios.post('https://web-ocean-business-mevn.vercel.app/api/cart/add/product',{
                         idProduct: this.fishpedestal._id,
                         quantity:  this.count,
                         idCart:    this.$store.state.idCart,
