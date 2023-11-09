@@ -51,7 +51,7 @@ import axios from 'axios';
                         habitat: this.$route.query.habitat
                     }
                 }
-                const result = await axios.get('web-ocean-business-api.vercel.app/api/fish/product/list', {
+                const result = await axios.get('https://web-ocean-business-mevn.vercel.app/api/fish/product/list', {
                     params: obj
                 })
                 this.listFish = result.data
