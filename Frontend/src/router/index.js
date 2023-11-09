@@ -35,7 +35,7 @@ import store from '../store'
 router.beforeEach(async (to, form,next)=>{
   var token = localStorage.getItem('token')
   if(token){
-    var result = await axios.get('web-ocean-business-api.vercel.app/api/auth/login',{
+    var result = await axios.get('https://web-ocean-business-mevn.vercel.app/api/auth/login',{
       params: {
         token: token
       }
