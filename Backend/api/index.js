@@ -25,7 +25,7 @@ mongoose.connect((process.env.MONGODB_URL),() => {
     console.log('Connect to database with mongoose');
 })
 //-------------------------------------------
-const createMongoose = require('./data/dataFish');
+const createMongoose = require('../data/dataFish');
 // lay data cho home
 // createMongoose.createDataFishPedestal();
 // createMongoose.createDataFish();
