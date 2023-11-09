@@ -171,9 +171,9 @@
     methods: {
         async getListProduct(){
             try {
-                const fish = await axios.get('http://localhost:4000/api/fish/product/list');
-                const fishPedestal = await axios.get('http://localhost:4000/api/fishpedestal/home/list');
-                const aquaticPlant = await axios.get('http://localhost:4000/api/aquaticPlant/home/list');
+                const fish = await axios.get('web-ocean-business-api.vercel.app/api/fish/product/list');
+                const fishPedestal = await axios.get('web-ocean-business-api.vercel.app/api/fishpedestal/home/list');
+                const aquaticPlant = await axios.get('web-ocean-business-api.vercel.app/api/aquaticPlant/home/list');
                 this.listfish = fish.data;
                 this.listfishPedestal = fishPedestal.data;
                 this.listaquaticPlant = aquaticPlant.data;
@@ -184,7 +184,7 @@
         },
         // -------------------------------------------------
         async handleRegister(username,psw,email){
-            const result = await axios.post('http://localhost:4000/api/auth/register',{
+            const result = await axios.post('web-ocean-business-api.vercel.app/api/auth/register',{
                    username: username,
                    psw: psw,
                    email: email,
@@ -254,7 +254,7 @@
 
         async countItem(){
             try {
-                const result = await axios.get('http://localhost:4000/api/cart/count/product',{
+                const result = await axios.get('web-ocean-business-api.vercel.app/api/cart/count/product',{
                     params: {
                         idCart : this.$store.state.idCart
                     }
