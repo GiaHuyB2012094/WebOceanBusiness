@@ -152,7 +152,7 @@
     methods: {
         async getListNews() {
             try {
-                const result = await axios.get('http://localhost:4000/api/news')
+                const result = await axios.get('web-ocean-business-api.vercel.app/api/news')
                 this.listNews = result.data
             }catch(err){
                 console.log(err)
