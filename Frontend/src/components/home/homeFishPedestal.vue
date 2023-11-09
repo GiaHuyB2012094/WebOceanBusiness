@@ -41,7 +41,7 @@ import axios from 'axios';
     methods: {
         async getListFishPedestal(){
             try {
-                const result = await axios.get('web-ocean-business-api.vercel.app/api/fishpedestal/home/list')
+                const result = await axios.get('https://web-ocean-business-mevn.vercel.app/api/fishpedestal/home/list')
                 this.listFishPedestal = result.data
             }catch(err){
                 console.log(err)
