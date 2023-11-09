@@ -41,7 +41,7 @@ import axios from 'axios';
     methods: {
         async getListAquaticPlant(){
             try {
-                const result = await axios.get('web-ocean-business-api.vercel.app/api/aquaticPlant/home/list');
+                const result = await axios.get('https://web-ocean-business-mevn.vercel.app/api/aquaticPlant/home/list');
                 this.listAquaticPlant = result.data
             }catch(err){
                 console.log(err)
