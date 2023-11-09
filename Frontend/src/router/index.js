@@ -5,7 +5,7 @@ import FishPedestal from '../views/Fishpedestal.vue';
 import AquaticPlant from '../views/AquaticPlant.vue';
 import News from '../views/News.vue';
 import Contact from '../views/Contact.vue';
-import DetailFishPedestal from '../views/detailFishpedestal.vue'
+import DetailFishPedestal from '../views/DetailFishpedestal.vue'
 import DetailFish from '../views/DetailFish.vue';
 import DetailAquaticPlant from '../views/DetailAquaticPlant.vue';
 import PopularFish from '../views/PopularFish.vue';
