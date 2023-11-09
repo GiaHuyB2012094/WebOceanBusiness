@@ -106,7 +106,7 @@
 
             // this.getInfoUsername(this.username);
 
-            var result = await axios.post('http://localhost:4000/api/auth/login',{
+            var result = await axios.post('web-ocean-business-api.vercel.app/api/auth/login',{
                 username: this.username,
                 psw: this.psw,
             });  
