@@ -41,7 +41,7 @@ import axios from 'axios';
     },
     methods: {
         async getListSuggest(){
-            const result = await axios.get('http://localhost:4000/api/fishPedestal/suggest/suggestFishpedestal', {
+            const result = await axios.get('web-ocean-business-api.vercel.app/api/fishPedestal/suggest/suggestFishpedestal', {
                 params: {
                     id:this.$route.params.id
                 }
