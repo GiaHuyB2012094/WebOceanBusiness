@@ -90,7 +90,7 @@
     methods: {
         async getListNews() {
             try {
-                const result = await axios.get('http://localhost:4000/api/news')
+                const result = await axios.get('https://web-ocean-business-mevn.vercel.app/api/news')
                 this.listNews = result.data
             }catch(err){
                 console.log(err)
