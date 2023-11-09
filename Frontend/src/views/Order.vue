@@ -128,7 +128,7 @@
         },
         async getOrders(){
             try {
-                const result = await axios.get('http://localhost:4000/api/cart/get/product',{
+                const result = await axios.get('https://web-ocean-business-mevn.vercel.app/api/cart/get/product',{
                     params: {
                         idCart : this.$store.state.idCart
                     }
@@ -152,7 +152,7 @@
 
         async deleteItem(id){
             try {
-                const resultDelete = await axios.delete('http://localhost:4000/api/cart/delete/product',{
+                const resultDelete = await axios.delete('https://web-ocean-business-mevn.vercel.app/api/cart/delete/product',{
                     params: {
                         idProduct: id,
                     }
