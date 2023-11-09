@@ -43,7 +43,7 @@ import axios from 'axios';
     methods: {
         async getListFish(){
             try {
-                const result = await axios.get('http://localhost:4000/api/fish/popular/list',
+                const result = await axios.get('web-ocean-business-api.vercel.app/api/fish/popular/list',
                 // {
                 //     params: {
                 //        id:this.$route.params.id},
