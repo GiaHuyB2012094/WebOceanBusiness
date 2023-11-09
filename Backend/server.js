@@ -32,9 +32,14 @@ const createMongoose = require('./data/dataFish');
 // createMongoose.createDataAquaticPlant();
 // createMongoose.createDataNews(); 
 //-------------------------------------------
-
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://deploy-mevn-1whq.vercel.app"],
+        methods: ["POST", "GET", "PUT", "DELETE"],
+        credentials: true 
+    }
+));
 app.use(morgan('common'));
 app.use(cookieParser());
 //Routes
