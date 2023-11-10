@@ -21,7 +21,7 @@ const cartsRoute = require('../routes/Carts');
 
 dotenv.config();
 //Connect Database with Mongoose
-mongoose.connect((process.env.MONGODB_URL),() => {
+mongoose.connect(("mongodb+srv://huydevse040902:0336070648@cluster0.anadv01.mongodb.net/?retryWrites=true&w=majority"),() => {
     console.log('Connect to database with mongoose');
 })
 //-------------------------------------------
