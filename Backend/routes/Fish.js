@@ -1,4 +1,4 @@
-const fishController = require("../controllers/fishcontroller");
+const fishController = require("../controllers/fishController");
 const { route } = require("./User");
 const router = require("express").Router();
 
