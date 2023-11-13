@@ -17,11 +17,11 @@ const authRoute = require('../routes/Auth');
 const userRoute = require('../routes/User');
 const newsRoute = require('../routes/News');
 const cartsRoute = require('../routes/Carts');
-//------------------------------------------
 
+//------------------------------------------
 dotenv.config();
 //Connect Database with Mongoose
-mongoose.connect(("mongodb+srv://huydevse040902:0336070648@cluster0.anadv01.mongodb.net/?retryWrites=true&w=majority"),() => {
+mongoose.connect((process.env.MONGODB_URL),() => {
     console.log('Connect to database with mongoose');
 })
 //-------------------------------------------
@@ -32,10 +32,20 @@ const createMongoose = require('../data/dataFish');
 // createMongoose.createDataAquaticPlant();
 // createMongoose.createDataNews(); 
 //-------------------------------------------
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+app.get('/route.htm', function (req, res) {
+    res.sendFile( __dirname + "/" + "route.htm" );
+});
+
 app.use(bodyParser.json());
 app.use(cors(
     {
-        origin: ["https://web-ocean-business-mevn.vercel.app"],
+        origin: ["https://deploy-mevn-1whq.vercel.app"],
         methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true 
     }
