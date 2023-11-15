@@ -14,20 +14,26 @@
 * User Interface
 ![user interface](https://github.com/GiaHuyB2012094/WebOceanBusiness/blob/main/asset/User%20Interface.jpeg)
 
+
 * Search fish and product orther.
+  
 ![search](https://github.com/GiaHuyB2012094/WebOceanBusiness/blob/main/asset/Search.png)
 
 * See fish detail
+  
 ![roomdetail](https://github.com/GiaHuyB2012094/WebOceanBusiness/blob/main/asset/Fish%20Detail.png)
 
 * Add fish to cart
+  
 ![addtocart](https://github.com/GiaHuyB2012094/WebOceanBusiness/blob/main/asset/Cart.png)
 
 # Example Purchae And Process
 * User login in to the user interface after then find fish and purchase
+  
 ![login](https://github.com/GiaHuyB2012094/WebOceanBusiness/blob/main/asset/Login.png)
 
 * Choose Fish and add to cart after purchase and payment
+  
 ![](https://github.com/GiaHuyB2012094/WebOceanBusiness/blob/main/asset/Payment1.png)
 ![](https://github.com/GiaHuyB2012094/WebOceanBusiness/blob/main/asset/Payment.png)
 
