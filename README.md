@@ -8,10 +8,10 @@
   * Register, Login as Member for User Client
   * Checkout and Purchase.
 ### Client
-User can register and login to purchase fish
+**_User can register and login to purchase fish_**
 ![register](https://github.com/GiaHuyB2012094/WebOceanBusiness/blob/main/asset/Register.png)
 
-**User Interface**
+**_User Interface_**
 
 ![user interface](https://github.com/GiaHuyB2012094/WebOceanBusiness/blob/main/asset/User%20Interface.jpeg)
 
